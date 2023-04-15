@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>ACADEMIC PROGRESS TRACKER</title>
+    <link rel="icon" type="image/x-icon" href="fav.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <style>
+      body 
+          {
+        background-image: url('back.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+           }
+      .ma{
+        font-family: Arial;
+        color:rgb(255, 0, 0);
+      }
+      </style>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+      <script>
+        $(document).ready(function(){
+          $("#ins").click(function(){
+            $("#wli").fadeOut(3000);
+          });
+        });
+        </script>
+      <script>
+        $(document).ready(function(){
+          $("#im").click(function(){
+            $("#mq").hide();
+          });
+        });
+        </script>
+      <script>
+        function mouseover() {
+            document.getElementById("hov").style.color = "green";
+        }
+
+        function mouseout() {
+            document.getElementById("hov").style.color = "red";
+        }
+        function myFunction(x) {
+  x.style.background = "grey";
+}
+    </script>
+  </head>
+  <body>
+    <img id="im" src='skill.png' width="300" height="50">
+    <div class="w3-right-align">
+    <button class="w3-button w3-grey w3-mobile" onclick = "window.location.href = 'about.html';" ><b>About Us</b></button>
+    <button class="w3-button w3-grey w3-mobile" onclick = "window.location.href = 'contactus.html';"><b>Contact Us</b></button>
+    <button class="w3-button w3-grey w3-mobile" onclick = "window.location.href = 'ppolicy.html';"><b>Privacy Policy</b></button>
+    <button class="w3-button w3-grey w3-mobile" onclick = "window.location.href = 'faq.html';"><b>FAQ</b></button>
+    <button class="w3-button w3-grey w3-mobile" onclick = "window.location.href = 'login.html';"><b>Admin</b></button>
+    </div>
+    <br>
+    <div class="w3-container w3-center">
+      <img id="wli" src='wstt.png' width="570" height="75">
+      <h1 style="color:white;" class="w3-serif">Select your institution</h1>
+      <br><br>
+      <form  action="logregister.html">
+        <label style="color:#FA1004;" for="ins"><h3><b>Institution:</b></h3></label>
+        <input list="institutions" id="ins" name="ins" placeholder="Enter Your Institution Name"style="width: 30%;height: 50px;border-width:6px; border-style:solid; border-color:#EBF9FA;" onfocus="myFunction(this)" required>
+        <datalist id="institutions" >
+                <option value="ABC College"/>
+                <option value="TCE"/>
+                <option value="XYZ College"/>
+                <option value="MNO College"/>
+        </datalist>
+        <br>
+        <input type = "submit" style=" border: none; background-color: inherit; padding: 14px 28px; font-size: 20px; cursor: pointer; display: inline-block; color: red;" id="hov" onmouseover="mouseover()"
+        onmouseout="mouseout()" onclick="load()" value= "GO">
+      </form>
+    </div>
+    <br><br><br><br><br>
+    <h1 id="demo" style="color: aliceblue;"></h1>
+    <marquee class="ma" id="mq">This the portal to track all activities like academic progress,Co-curicular activities of a student from various institutions in real-time</marquee>
+    <div class="w3-display-bottommiddle">
+    <h6 style="color:black;"><b>Copyright ©2023 SAPT</b></h6>
+  </div>
+  </body>
+</html>

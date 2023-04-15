@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ACADEMIC PROGRESS TRACKER</title>
+    <link rel="icon" type="image/x-icon" href="fav.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <style>
+      .container {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+      }
+      input[type="text"], input[type="password"] {
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+      }
+      input[type="submit"] {
+        width: 20%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+    <script>
+     
+    
+      
+      function myFunction(e) {
+  coor = "Click here to login to reports page";
+  document.getElementById("demo").innerHTML = coor
+}
+function out() {
+  document.getElementById("demo").innerHTML = "";
+}
+    window.onload = function() {
+    let label = document.getElementById("username");
+    label.style.color = "blue";
+  };
+    </script>
+  </head>
+  <body style="background-color:black">
+    <img src='skill.png' width="300" height="50">
+ <div class="w3-right-align">
+  <button class="w3-button w3-grey w3-mobile" onclick = "window.location.href = 'home.html';" ><b>HOME</b></button>
+  <button class="w3-button w3-grey w3-mobile" onclick = "window.location.href = 'about.html';" ><b>About Us</b></button>
+  <button class="w3-button w3-grey w3-mobile" onclick = "window.location.href = 'contactus.html';"><b>Contact Us</b></button>
+  <button class="w3-button w3-grey w3-mobile" onclick = "window.location.href = 'ppolicy.html';"><b>Privacy Policy</b></button>
+  <button class="w3-button w3-grey w3-mobile" onclick = "window.location.href = 'faq.html';"><b>FAQ</b></button>
+  <button class="w3-button w3-grey w3-mobile" onclick = "window.location.href = 'login.html';"><b>Admin</b></button>
+  </div>
+  <br><br><br><br><br><br>
+    <div class="container">
+      <form action="check.jsp" method="post">
+        <label style="color: aliceblue; font-weight: bold; font-size: 18px;" for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your mail id" required>
+        <br>
+        <label style="color: aliceblue; font-weight: bold; font-size: 18px;" for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <br><br><br>
+        <input type="submit" onmousemove="myFunction(event)" onmouseout="out()" style="color: aliceblue; font-weight: bold;" value="Login">
+        <h5 id="demo" style="color: aliceblue;" ></h5>
+      </form>
+    </div>
+    <br><br><br>
+    <div class="w3-container w3-center">  
+        <br>
+        <h6 style="color:white;"><b>Copyright @2023 SAPT</b></h6>
+      </div>
+  </body>
+</html>

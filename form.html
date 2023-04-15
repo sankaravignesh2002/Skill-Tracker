@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>ACADEMIC PROGRESS TRACKER</title>
+    <link rel="icon" type="image/x-icon" href="fav.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <style>
+          .div1 {
+        margin-bottom: 10px;
+  	padding-top: 50px;
+  	padding-right: 100px;
+  	padding-bottom: 50px;
+ 	padding-left: 400px;
+      }
+      label{
+        display: inline-block;
+        width: 200px;
+      }
+      .ma{
+        font-family:Arial;
+        color:rgb(255, 0, 0);
+      }
+   	#female{
+	margin-left: -70px;
+	}
+	#others{
+	margin-left: -50px;
+	}	
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>
+  function mouseover() {
+      document.getElementById("hov").style.color = "green";
+  }
+
+  function mouseout() {
+      document.getElementById("hov").style.color = "red";
+  }
+  function highlightInput(elm){
+elm.style.background = "gray";
+}    
+function myFunction(){
+  document.getElementById("ak").innerHTML = "Always Please ensure that your password has more than eight characters";
+}
+function onlo() {
+  alert("Fill the form according to the norms mentioned...");
+}
+</script>
+<script>
+  $(document).ready(function(){
+    $("#photo").focus(function(){
+      $("#file").css("display", "inline").fadeOut(5000);
+    });
+    $("#password").focus(function(){
+      $("#pass").css("display", "inline").fadeOut(5000);
+    });
+  });
+  </script>
+</head>
+<body style="background-color:black" onload="onlo()">
+ <img src='skill.png' width="300" height="50">
+ <div class="w3-right-align">
+  <button class="w3-button w3-grey w3-mobile" onclick = "window.location.href = 'home.html';" ><b>HOME</b></button>
+  <button class="w3-button w3-grey w3-mobile" onclick = "window.location.href = 'about.html';" ><b>About Us</b></button>
+  <button class="w3-button w3-grey w3-mobile" onclick = "window.location.href = 'contactus.html';"><b>Contact Us</b></button>
+  <button class="w3-button w3-grey w3-mobile" onclick = "window.location.href = 'ppolicy.html';"><b>Privacy Policy</b></button>
+  <button class="w3-button w3-grey w3-mobile" onclick = "window.location.href = 'faq.html';"><b>FAQ</b></button>
+  <button class="w3-button w3-grey w3-mobile" onclick = "window.location.href = 'login.html';"><b>Admin</b></button>
+  </div>
+<div class="w3-container w3-center">
+      <h1 style="color:white;" class="w3-serif">Registering as a student</h1>
+</div>
+<form action="store.jsp" method="post">
+
+<div class="div1">
+  <label class="ma" style="color:white;" for="photo">Upload Your Photo here</label>
+  <input type="file" id="photo" accept="image/*" required>
+  <h6 id="file" style="color:white; font-size:1vw;">Upload your higher clarity photo(jpeg,jpg,png)</h6>
+  <br>
+  <br>
+  <label style="color:white;" for="name" size="55">Name:</label>
+  <input type="text" id="name" name="name" onblur="highlightInput(this)" required>
+  <br>
+  <br>
+  <label style="color:white;" for="roll">Roll Number:</label>
+  <input type="text" id="roll" name="roll" placeholder="E.g:123456" pattern="[0-9]{6}" onblur="highlightInput(this)" required>
+  <br>
+  <br>
+  <label style="color:white;" for="age">Age:</label>
+  <input type="text" id="age" name="age" onblur="highlightInput(this)" required>
+  <br>
+  <br>
+  <label style="color:white;" for="gender">Gender:</label>
+  <input type="radio" id="male" name="gender" value="Male">
+<label style="color:white;" for="male">MALE</label>
+<input type="radio" id="female" name="gender" value="Female">
+<label for="female" style="color:white;">FEMALE</label>
+<input type="radio" id="others" name="gender" value="Others">
+<label style="color:white;" for="others">OTHERS</label>
+  <br>
+  <br>
+  <label style="color:white;" for="dob">D.O.B:</label>
+  <input type="date" id="dob" name="dob" required>
+  <br>
+  <br>
+  <label style="color:white;" for="mail">E-mail:</label>
+  <input type="email" id="email" name="email" placeholder="E.g:abc@gmail.com" onblur="highlightInput(this)" required>
+  <br>
+  <br>
+  <label style="color:white;" for="pmb">Parent Mobile Number:</label>
+  <input type="text" id="pmb" name="pmb" pattern="[0-9]{10}" onblur="highlightInput(this)" required>
+  <br>
+  <br>
+  <label style="color:white;" for="password" size="55">Password (For logging in):</label>
+  <input type="text" id="password" name="password" onblur="highlightInput(this)" onkeypress="myFunction()"required>
+  <h6 id="pass" style="color:white; font-size:1vw;">This will be your password for login</h6>
+  <br>
+  <h6 style="color:red;" id="ak"></h6>
+  <br><br>
+  <label style="color:white;" for="add">Address:</label>
+  <textarea id="add" name="ad" rows="3" cols="40" onblur="highlightInput(this)" required>
+  </textarea>
+  </div>
+  <div class="w3-container w3-center">  
+    <input type = "submit" style=" border: none; background-color: inherit; padding: 14px 28px; font-size: 20px; cursor: pointer; display: inline-block; color: red;" id="hov" onmouseover="mouseover()"
+    onmouseout="mouseout()" value= "SUBMIT">
+</div>
+</form> 
+<div class="w3-container w3-center">  
+  <br>
+  <h6 style="color:white;"><b>Copyright ©2023 SAPT</b></h6>
+</div>
+</body>
+</html>

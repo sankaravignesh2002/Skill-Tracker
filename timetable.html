@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Timetable</title>
+	<link rel="icon" type="image/x-icon" href="fav.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		th, td {
+			text-align: center;
+			padding: 8px;
+			border: 1px solid black;
+		}
+
+		th {
+			background-color: #4CAF50;
+			color: white;
+		}
+
+		tr {
+			background-color: #f2f2f2;
+		}
+
+		.lunch-break {
+			background-color: #FFC0CB;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body style="background-color:black">
+    <img src='skill.png' width="300" height="50">
+	<div class="w3-right-align">
+		<button class="w3-button w3-grey w3-mobile" onclick = "window.location.href = 'home.html';" ><b>HOME</b></button>
+		<button class="w3-button w3-grey w3-mobile" onclick = "window.location.href = 'about.html';" ><b>About Us</b></button>
+		<button class="w3-button w3-grey w3-mobile" onclick = "window.location.href = 'contactus.html';"><b>Contact Us</b></button>
+		<button class="w3-button w3-grey w3-mobile" onclick = "window.location.href = 'ppolicy.html';"><b>Privacy Policy</b></button>
+		<button class="w3-button w3-grey w3-mobile" onclick = "window.location.href = 'faq.html';"><b>FAQ</b></button>
+		<button class="w3-button w3-grey w3-mobile" onclick = "window.location.href = 'login.html';"><b>Admin</b></button>
+		</div>
+	<h1 style="text-align:center;color:white">Timetable for the academic year 2022-2023</h1>
+	<br>
+	<table>
+		<thead>
+			<tr>
+				<th>Day</th>
+				<th>Period 1</th>
+				<th>Period 2</th>
+				<th>Period 3</th>
+				<th>Period 4</th>
+				<th>Period 5</th>
+				<th>Lunch Break</th>
+				<th>Period 6</th>
+				<th>Period 7</th>
+				<th>Period 8</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Monday</td>
+				<td>Maths</td>
+				<td>Physics</td>
+				<td>Chemistry</td>
+				<td>English</td>
+				<td>Computer Science</td>
+				<td class="lunch-break">Lunch</td>
+				<td>English</td>
+				<td>Physics</td>
+				<td>Maths</td>
+			</tr>
+			<tr>
+				<td>Tuesday</td>
+				<td>English</td>
+				<td>Maths</td>
+				<td>Computer Science</td>
+				<td>Physics</td>
+				<td>Chemistry</td>
+				<td class="lunch-break">Lunch</td>
+				<td>Chemistry</td>
+				<td>Maths</td>
+				<td>Physics</td>
+			</tr>
+			<tr>
+				<td>Wednesday</td>
+				<td>Chemistry</td>
+				<td>English</td>
+				<td>Physics</td>
+				<td>Computer Science</td>
+				<td>Maths</td>
+				<td class="lunch-break">Lunch</td>
+				<td>Computer Science</td>
+				<td>English</td>
+				<td>Chemistry</td>
+			</tr>
+			<tr>
+				<td>Thursday</td>
+				<td>Computer Science</td>
+				<td>Chemistry</td>
+				<td>Maths</td>
+				<td>English</td>
+				<td>Physics</td>
+				<td class="lunch-break">Lunch</td>
+				<td>Maths</td>
+				<td>Computer Science</td>
+				<td>English</td>
+			</tr>
+			<tr>
+				<td>Friday</td>
+				<td>Physics</td>
+				<td>Computer Science</td>
+				<td>English</td>
+				<td>Chemistry</td>
+				<td>Maths
+                </td>
+				<td class="lunch-break">Lunch</td>
+				<td>Physics</td>
+				<td>Chemistry</td>
+				<td>Computer Science</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

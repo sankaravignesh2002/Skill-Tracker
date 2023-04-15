@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ACADEMIC PROGRESS TRACKER</title>
+    <link rel="icon" type="image/x-icon" href="fav.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+</head>
+<style>
+p
+{
+  color:white;
+  font-size: 20px;
+  font-family: Serif;
+  margin-left: 30px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#p1").mouseenter(function(){
+    $("#p1").css("color", "red");
+  });
+  $("#p1").mouseleave(function(){
+    $("#p1").css("color", "white");
+  });
+  $("#p2").mouseenter(function(){
+    $("#p2").css("color", "red");
+  });
+  $("#p2").mouseleave(function(){
+    $("#p2").css("color", "white");
+  });
+  $("#p3").mouseenter(function(){
+    $("#p3").css("color", "red");
+  });
+  $("#p3").mouseleave(function(){
+    $("#p3").css("color", "white");
+  });
+});
+</script>
+<body>
+    <body style="background-color:black">
+        <img src='skill.png' width="300" height="50">
+        <div class="w3-right-align">
+          <button class="w3-button w3-grey w3-mobile" onclick = "window.location.href = 'home.html';" ><b>HOME</b></button>
+          <button class="w3-button w3-grey w3-mobile" onclick = "window.location.href = 'about.html';" ><b>About Us</b></button>
+          <button class="w3-button w3-grey w3-mobile" onclick = "window.location.href = 'contactus.html';"><b>Contact Us</b></button>
+          <button class="w3-button w3-grey w3-mobile" onclick = "window.location.href = 'ppolicy.html';"><b>Privacy Policy</b></button>
+          <button class="w3-button w3-grey w3-mobile" onclick = "window.location.href = 'faq.html';"><b>FAQ</b></button>
+          <button class="w3-button w3-grey w3-mobile" onclick = "window.location.href = 'login.html';"><b>Admin</b></button>
+          </div>
+       <div class="w3-container w3-center">
+        <br><br>
+        <img src='ppolicy.png' width="300" height="50">
+        <br>
+       </div>
+       <br>
+       <p id="p1">Our privacy policy is subject to change at any time without notice. To make sure you are aware of any changes, please review this policy periodically.
+        <br><br>
+         By visiting this Website you agree to be bound by the terms and conditions of this Privacy Policy. If you do not agree please do not use or access our Website.
+         <br><br>
+         By mere use of the Website, you expressly consent to our use and disclosure of your personal information in accordance with this Privacy Policy. This Privacy Policy is incorporated into and subject to the Terms of Use.
+         </p>
+      <img src='II.png' width="350" height="28">
+    
+        <p id="p2">For the purpose of personal identification by the application, cookies may be used on certain pages to track the work flow.
+           <br><br>
+            To authenticate you may have to enter your username and password for every session you login.
+            </p>
+    
+      <img src='SI.png' width="350" height="28">
+   
+        <p id="p3">We DO NOT share your information with others. However your school faculties or other authorized authorities in your school may share the information present in this website with other stake holders.
+            </p>
+            <div class="w3-display-bottommiddle">
+              <h6 style="color:white;"><b>Copyright @2023 SAPT</b></h6>
+            </div>
+</body>
+</html>
